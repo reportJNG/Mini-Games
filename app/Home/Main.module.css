@@ -1,0 +1,21 @@
+/* Wrapper holds everything normally */
+.wrapper {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+}
+
+/* Fullscreen animated background */
+.bg {
+  position: fixed;     /* stays behind */
+  inset: 0;            /* same as top:0 left:0 right:0 bottom:0 */
+  z-index: -1;         /* behind header + content */
+  pointer-events: none;
+}
+
+/* Your main page content */
+.content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 80px 20px;  /* safe space under header */
+}

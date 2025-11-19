@@ -1,0 +1,101 @@
+/* YourPage.module.css */
+
+/* PAGE CONTAINER */
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+  background: linear-gradient(180deg, #0b0b0b 0%, #0f0f12 100%);
+  color: #fff;
+}
+
+/* TOP ROW */
+.upper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  /* keep it compact on small screens */
+  padding: 4px 0;
+}
+
+/* Back icon container */
+.backpage {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255,255,255,0.03);
+  border-radius: 24px;
+  padding: 12px;
+  cursor: pointer;
+  transition: transform .14s ease, background .14s ease;
+}
+
+.backpage:hover {
+  transform: translateY(-4px);
+  color: black;
+  background: rgb(255, 255, 255);
+}
+
+/* if you're rendering an icon (FiSkipBack), size it */
+.backpage :global(svg) {
+  width: 22px;
+  height: 22px;
+  display: block;
+}
+
+/* Timer container */
+.timer {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(201, 223, 77, 0.801);
+  padding: 6px 14px;
+  border-radius: 12px;
+  min-width: 78px;
+  text-align: center;
+}
+
+/* Timer text */
+.timertext {
+  margin: 0;
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 0.6px;
+}
+
+/* MAIN / MIDDLE AREA */
+.mid {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* top align if question card is taller */
+  padding-top: 10px;
+  gap: 16px;
+}
+
+/* Optional: wrap each Secondmain in this for card styling.
+   Add className={styles.questionCard} to the inner div returned by map()
+*/
+.questionCard {
+  width: 100%;
+  max-width: 540px;
+  
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 10px 30px rgba(2,6,23,0.6);
+  border: 1px solid rgba(255,255,255,0.03);
+}
+
+/* Responsive tweaks */
+@media (max-width: 640px) {
+  .container { padding: 12px; }
+  .timertext { font-size: 16px; }
+  .questionCard { padding: 14px; border-radius: 12px; }
+  .backpage :global(svg) { width: 20px; height: 20px; }
+}

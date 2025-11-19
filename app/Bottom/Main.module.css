@@ -1,0 +1,59 @@
+.container {
+  width: 100%;
+  padding: 20px 30px;
+  background: #0b0b0b;
+  color: white;
+  border-top: 1px solid #222;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Social icons area */
+.socials {
+  display: flex;
+  gap: 14px;
+}
+
+/* Instagram + GitHub buttons */
+.socials button {
+  width: 42px;
+  height: 42px;
+  border: none;
+  border-radius: 8px;
+  background: #1a1a1a;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.25s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socials button:hover {
+  background: #ffffff;
+  color: #000000;
+  transform: translateY(-3px);
+}
+
+/* Text section */
+.text {
+  text-align: center;
+}
+
+.text p {
+  margin: 0;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  color: grey;
+  opacity: 0.8;
+}
+
+.text h3 {
+    text-align: center;
+  margin: 2px 0 0 0;
+  font-size: 18px;
+  font-weight: 600;
+}

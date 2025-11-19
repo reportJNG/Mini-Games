@@ -1,0 +1,138 @@
+/* Main container */
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background: #000000; /* pure dark */
+  color: white;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+
+  /* subtle snow grain effect */
+  background-image: radial-gradient(
+      rgba(255, 255, 255, 0.137) 1px,
+      transparent 1.5px
+    );
+  background-size: 3px 3px;
+}
+
+/* Back button top-left */
+.backpage {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 26px;
+  cursor: pointer;
+  color: #fff;
+  transition: 0.2s ease;
+}
+
+.backpage:hover {
+  color: #9e9e9e;
+}
+
+/* Timer top-right */
+.timer {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.timertext {
+  background: rgba(255,255,255,0.15);
+  padding: 8px 14px;
+  border-radius: 12px;
+  backdrop-filter: blur(4px);
+  font-size: 18px;
+}
+
+/* Title */
+.upper {
+  width: 100%;
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.textitle {
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* Image zone */
+.mid {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.box {
+  width: 320px;
+  height: 250px;
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(4px);
+  border-radius: 18px;
+  overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid rgba(255,255,255,0.15);
+}
+
+/* Buttons zone */
+.bottom {
+  width: 100%;
+  margin-top: 20px;
+
+  display: flex;
+  justify-content: center;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  width: 80%;
+  max-width: 350px;
+}
+
+/* Answer buttons */
+.buttons button {
+  padding: 12px 0;
+  font-size: 18px;
+  font-weight: 500;
+
+  color: black;
+  background: rgba(255, 255, 255, 0.555);
+
+  border: none;
+  border-radius: 12px;
+
+  cursor: pointer;
+  transition: 0.2s ease;
+
+  /* slight frosty glow */
+  box-shadow: 0 0 10px rgba(255,255,255,0.15);
+}
+
+.buttons button:hover {
+  background: #e2e2e2;
+  box-shadow: 0 0 12px rgba(255,255,255,0.25);
+  transform: translateY(-2px);
+}
+
+.buttons button:active {
+  transform: scale(0.96);
+}
