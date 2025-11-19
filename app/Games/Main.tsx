@@ -1,6 +1,7 @@
 import Secondmain from "./Components/Secondmain";
 import styles from "./main.module.css";
 import FloatingLines from "./BG/Pixel";
+
 const games = [
   {
     gamename: 'Football Clubs',
