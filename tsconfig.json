@@ -29,15 +29,16 @@
       ]
     }
   },
-  "include": [
-    "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx",
-    ".next/types/**/*.ts",
-    ".next/dev/types/**/*.ts",
-    "**/*.mts",
-    "app/Games/BG/Pixel.tsx"
-  ],
+"include": [
+  "next-env.d.ts",
+  "**/*.ts",
+  "**/*.tsx",
+  "**/*.js",
+  "**/*.jsx",
+  "**/*.d.ts",
+  ".next/types/**/*.ts"
+]
+,
   "exclude": [
     "node_modules"
   ]
